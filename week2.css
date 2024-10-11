@@ -1,0 +1,122 @@
+/*made colors the theme of the desert and font fantasy*/
+html{
+    font-family: fantasy;
+    background: linear-gradient(180deg, 
+    #d9b6a3,
+    #bf754b,
+    #a6583c,
+    #d9b6a3
+    );
+  }
+  /*body set margin*/
+
+  body {
+    margin: 1rem 5rem;
+  }
+    /*all headers 1 and 2 aligned center*/
+
+  h1{
+
+    text-align: center;
+
+  }
+
+  h2 {
+
+    text-align: center;
+  }
+      /*links to navigate created hover to be black*/
+
+  
+  a:hover{
+    background-color: black;
+  }
+      /*aligned images center by using class*/
+
+
+.center {
+    display: block;
+   margin-left: auto;
+   margin-right: auto;
+    width: 100%;
+  }
+      /*table created borders, collaped and edited colors and padding*/
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    border: black;
+    border-style: double;
+    margin-top: 10px;
+  }
+  table, th, td{
+    border: 1px solid
+  }
+  th, td{
+    padding: 10px;
+    text-align: left;
+  }
+  th {
+     background-color: #d9b6a3;
+  }
+      /*had to research this - created overlay hover for images using different classes for each element*/
+
+
+  .container {
+    position: relative;
+    width: 50%;
+    margin: auto;
+  }
+  
+  .image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #a6583c;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+      /*styled my form to match the desert aesthetic*/
+
+
+  form {
+    border-color: #4a1b03;
+  }
+
+input, ::placeholder {
+    background-color: #762d09;
+    color: #deba8f
+    ;
+}
+h3 {
+    padding: 1px;
+}
